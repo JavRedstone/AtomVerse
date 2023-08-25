@@ -1,7 +1,8 @@
-# Goose Hacks 2023 --- AtomVerse
+# AtomVerse
 Author: Javier Huang
-![The Atomverse Logo --- A real screenshot of a water molecule in the simulation.](https://i.imgur.com/thvYkrP.png)
-#### The Atomverse Logo --- A real screenshot of a water molecule in the simulation.
+
+![The Atomverse Logo - A real screenshot of a water molecule in the simulation.](https://i.imgur.com/thvYkrP.png)
+#### The Atomverse Logo - A real screenshot of a water molecule in the simulation.
 
 ## Inspiration
 
