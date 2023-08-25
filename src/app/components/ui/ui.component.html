@@ -1,0 +1,50 @@
+<div class="ui-wrapper">
+    <mat-toolbar color="primary" class="ui-toolbar">
+        <h1 class="ui-title">AtomVerse</h1>
+    
+        <mat-form-field appearance="outline" color="accent" class="ui-select-molecule">
+            <mat-label>Select Molecule</mat-label>
+            <mat-select [(ngModel)]="selectedMolecule">
+                <mat-option *ngFor="let molecule of molecules" [value]="molecule">{{ molecule.name }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <span class="ui-temperature-label">
+            <b>Temp: {{ uiTemperatureSlider.value }} °C</b>
+        </span>
+
+        <mat-slider class="ui-temperature-slider" color="accent" discrete [min]="minTemperature" [max]="maxTemperature" [step]="temperatureStep">
+            <input #uiTemperatureSlider matSliderThumb [(value)]="temperature" (input)="onTemperatureChange()">
+        </mat-slider>
+
+        <button mat-icon-button class="ui-add-molecule" (click)="addNewMolecule(100)">
+            <mat-icon>add</mat-icon>
+        </button>
+    
+
+        <button mat-icon-button class="ui-start-stop" (click)="startStopSim()">
+            <mat-icon *ngIf="sim?.isStarted">stop</mat-icon>
+            <mat-icon *ngIf="!sim?.isStarted">play_arrow</mat-icon>
+        </button>
+
+        <button mat-icon-button class="ui-resume-pause" (click)="resumePauseSim()">
+            <mat-icon *ngIf="sim?.isPaused">resume</mat-icon>
+            <mat-icon *ngIf="!sim?.isPaused">pause</mat-icon>
+        </button>
+
+        <button mat-icon-button class="ui-slow-down" (click)="slowDownSim()">
+            <mat-icon>fast_rewind</mat-icon>
+        </button>
+
+        <button mat-icon-button class="ui-speed-up" (click)="speedUpSim()">
+            <mat-icon>fast_forward</mat-icon>
+        </button>
+
+        <button mat-icon-button class="ui-reset-speed" (click)="resetSpeedSim()">
+            <mat-icon>device_reset</mat-icon>
+        </button>
+
+    </mat-toolbar>
+
+    <canvas #uiCanvas class="ui-canvas"></canvas>
+</div>

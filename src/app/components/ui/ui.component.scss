@@ -1,0 +1,73 @@
+.ui-wrapper {
+    width: 100vw;
+    position: fixed;
+}
+
+.ui-toolbar {
+    height: 75px;
+}
+
+.ui-title {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.ui-select-molecule {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.ui-temperature-label {
+    position: fixed;
+    top: 15px;
+    left: 230px;
+}
+
+.ui-temperature-slider {
+    position: fixed;
+    top: 30px;
+    left: 230px;
+}
+
+.ui-add-molecule {
+    position: fixed;
+    left: 360px;
+}
+
+.ui-start-stop {
+    position: fixed;
+    right: 230px;
+}
+
+.ui-resume-pause {
+    position: fixed;
+    right: 175px;
+}
+
+.ui-slow-down {
+    position: fixed;
+    right: 120px;
+}
+
+.ui-speed-up {
+    position: fixed;
+    right: 65px;
+}
+
+.ui-reset-speed {
+    position: fixed;
+    right: 10px;
+}
+
+.ui-canvas {
+    position: fixed;
+
+    display: block;
+    margin: 0px;
+    background: white;
+
+    width: 100vw;
+    height: calc(100vh - 75px);
+}
