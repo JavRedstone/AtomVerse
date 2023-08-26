@@ -42,8 +42,11 @@ I built this project using the **Angular CLI framework** and **Three.js library*
 Naturally, I used the Object Oriented Programming (OOP) approach, by first building up classes for the Atoms and Molecules, then manipulated them in the simulation using a math helper class, and finally displayed the atoms and molecules to the user through the UI component.
 
 &rarr; **Atom and Molecule Classes & Wrappers** for creating the atoms and molecules.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr; **Simulation Class** to control the simulation.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr; **MathHelper Class** to perform mathematical operations, such as conversion of units and finding velocity from temperature and mass.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr; **UI Component** to create molecule meshes and display them.
 
 ![Code structure](https://i.imgur.com/muCZiK2.png)
